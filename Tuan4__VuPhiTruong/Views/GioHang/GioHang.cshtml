@@ -12,7 +12,6 @@
 </p>
 <table class="table">
     <tr>
-        <th>@Html.DisplayNameFor(model => model.masach)</th>
         <th>@Html.DisplayNameFor(model => model.tensach)</th>
         <th>@Html.DisplayNameFor(model => model.hinh)</th>
         <th>@Html.DisplayNameFor(model => model.giaban)</th>
@@ -37,7 +36,7 @@
                 <td><input type="submit" value="Cập nhật" class="btn btn-success" /></td>
             }
         </tr>
-    }
+    
         <tr style="font-weight: bold; text-align:left; color:red">
             <td colspan-"2"> Số loại sách: @ViewBag.Tongsoluongsanpham </td>
             <td colspan="2"> Số lượng sách: @ViewBag.Tongsoluong </td>
@@ -49,4 +48,6 @@
         <tr style="font-weight: bold; color:yellow; text-align:right ">
             <td colspan="5">    @Html.ActionLink("Đặt hàng", "Dathang", "GioHang")      </td>
         </tr>
+    }
+
 </table>
